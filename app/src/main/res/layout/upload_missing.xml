@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/SearchPhoto"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoBtn"
+        app:srcCompat="@drawable/dogicon" />
+
+    <Button
+        android:id="@+id/PhotoBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/gangwonstate"
+        android:text="사진 업로드"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/SearchPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#FFFFFF"
+        app:strokeColor="#FAEECB"
+        app:strokeWidth="10px"/>
+
+    <Button
+        android:id="@+id/UploadBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="등록하기"
+        android:fontFamily="@font/gangwonstate"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#FFFFFF"
+        app:strokeColor="#FAEECB"
+        app:strokeWidth="10px"/>
+
+    <TextView
+        android:id="@+id/PlaceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gangwonstate"
+        android:text="잃어버린 장소"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/DateLabel"
+        app:layout_constraintEnd_toStartOf="@+id/PlaceText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SearchPhoto" />
+
+    <TextView
+        android:id="@+id/DateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gangwonstate"
+        android:text="잃어버린 날짜"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/FeatureLabel"
+        app:layout_constraintEnd_toStartOf="@+id/DateText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PlaceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/PlaceLabel" />
+
+    <TextView
+        android:id="@+id/FeatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gangwonstate"
+        android:text="세부 사항"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/DateLabel"
+        app:layout_constraintTop_toTopOf="@+id/FeatureText" />
+
+    <TextView
+        android:id="@+id/DateText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard"
+        android:background="@drawable/textviewcustom_under"
+        android:text="yyyy년 mm월 dd일"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DateLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="@+id/FeatureText"
+        app:layout_constraintTop_toTopOf="@+id/DateLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/FeatureText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/pretendard"
+        android:background="@drawable/textviewcustom_sq"
+        android:hint="연락처, 강아지 특징 등을 자세히 적어주세요"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/UploadBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/FeatureLabel"
+        app:layout_constraintTop_toBottomOf="@+id/DateText" />
+
+    <TextView
+        android:id="@+id/PlaceText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard"
+        android:background="@drawable/textviewcustom_under"
+        android:text="주소 찾기"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PlaceLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DateText"
+        app:layout_constraintTop_toTopOf="@+id/PlaceLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

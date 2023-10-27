@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "148270099695",
+    "project_id": "findog-fcce0",
+    "storage_bucket": "findog-fcce0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148270099695:android:47144c9a6037f79d2dff1a",
+        "android_client_info": {
+          "package_name": "com.example.findog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148270099695-5i8e8dt8gtc7kvul1hv2c1jq769j0cpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2dJ6aKO7zVI8wQhIfSkH6Vgi-UfyuytM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148270099695-5i8e8dt8gtc7kvul1hv2c1jq769j0cpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
